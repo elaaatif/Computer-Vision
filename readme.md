@@ -1,9 +1,9 @@
 # Faster R-CNN for Wildfire Detection using Satellite Images
 
 ## Overview
-This project focuses on detecting and segmenting wildfire-affected areas using satellite and UAV (Unmanned Aerial Vehicle) imagery. Wildfires pose a significant threat to ecosystems, human lives, and infrastructure, making early detection and accurate mapping of affected areas critical for disaster management. By leveraging advanced deep learning techniques, this project aims to develop a robust system for identifying and localizing wildfire-affected regions with high precision.
+This project focuses on detecting  wildfire-affected areas using satellite  imagery. Wildfires pose a significant threat to ecosystems, human lives, and infrastructure, making early detection and accurate mapping of affected areas critical for disaster management. By leveraging advanced deep learning techniques, this project aims to develop a robust system for identifying and localizing wildfire-affected regions with high precision.
 
-The project is divided into two main components: **object detection** and **segmentation**. For object detection, we use the **Faster R-CNN** (Region-based Convolutional Neural Network) model, a state-of-the-art deep learning model known for its accuracy and efficiency in detecting objects in complex scenes.
+The project is divided into two main components: **object detection** . For object detection, we use the **Faster R-CNN** (Region-based Convolutional Neural Network) model, a state-of-the-art deep learning model known for its accuracy and efficiency in detecting objects in complex scenes.
 
 ---
 
