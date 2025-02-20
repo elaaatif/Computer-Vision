@@ -3,7 +3,7 @@
 ## Overview
 This project focuses on detecting  wildfire-affected areas using satellite  imagery. Wildfires pose a significant threat to ecosystems, human lives, and infrastructure, making early detection and accurate mapping of affected areas critical for disaster management. By leveraging advanced deep learning techniques, this project aims to develop a robust system for identifying and localizing wildfire-affected regions with high precision.
 
-The project is divided into two main components: **object detection** . For object detection, we use the **Faster R-CNN** (Region-based Convolutional Neural Network) model, a state-of-the-art deep learning model known for its accuracy and efficiency in detecting objects in complex scenes.
+The project is divided into two main components: **object detection** . For object detection, we use the **Faster R-CNN** (Region-based Convolutional Neural Network) model,a  deep learning model known for its accuracy and efficiency in detecting objects in complex scenes.Using diffrent backbones [EfficientNet-B3 ,ResNet101 , ResNet50] lavrege a better comprehension of the model and the challenges it took to make .
 
 ---
 
@@ -28,6 +28,9 @@ The project employs the following techniques and methodologies:
 
 ### 2. **Data Preprocessing**
    - Multiple datasets from Roboflow are merged to create a comprehensive training dataset, ensuring the model generalizes well to diverse scenarios.
+   - example of image enhancement 'Histogram equalisation' for a better contrast
+![image](https://github.com/user-attachments/assets/d2abe3e2-e40f-4ac5-9c72-e708eab67dab)
+
 
 ### 3. **Evaluation Metrics**
    - The model's performance is evaluated using metrics such as **Precision**, **Recall**, **F1-Score**, and **mAP** (mean Average Precision). These metrics ensure the model is both accurate and reliable.
@@ -52,14 +55,19 @@ By merging these datasets, we ensure the model is robust and capable of handling
 
 ---
 
-## Key Features
+## Aimed Features
+- **Multi-Model Comparaison**:By using multiple backbones to showcase the difference it makes to use different backbones for the faster RCNN task for object detection.
 - **High Accuracy**: Leverages state-of-the-art deep learning models to achieve precise detection and segmentation of wildfire-affected areas.
 - **Scalability**: Can process large volumes of satellite and UAV imagery, making it suitable for real-world applications.
 - **Flexibility**: Supports both object detection and segmentation, allowing users to choose the approach that best suits their needs.
 - **Open-Source**: Built using open-source tools and frameworks, making it accessible to researchers and developers worldwide.
 
 ---
+## Results
+- **Results example**:Comparing results for the Efficient-NET-B3 Backbone for a model WITHOUT histogram equalization and for the model WITH histogram equalization (HE)
+![image](https://github.com/user-attachments/assets/109beb5f-0fd5-4559-8207-8142ea333c4b)
 
+---
 ## Applications
 This project has several real-world applications, including:
 1. **Disaster Response**: Enabling rapid response to wildfires by providing accurate and timely information.
@@ -77,3 +85,8 @@ The project can be extended in the following ways:
 4. **Deployment on Edge Devices**: Optimizing the model for deployment on edge devices, enabling on-site analysis in remote areas.
 
 ---
+## 👥 Contributors
+- [**Abdelatif Mekri**](https://github.com/elaaatif)
+- [**Halima Nfidsa**](https://github.com/kawther1010)
+- [**Imad Eddine Boukader**](https://github.com/ispollin)
+- [**Nahla Yasmine Mihoubi**](https://github.com/Nahla-yasmine)
